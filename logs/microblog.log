@@ -66,3 +66,6 @@ FROM user
 WHERE user.id = ?]
 [parameters: (1,)]
 (Background on this error at: http://sqlalche.me/e/14/e3q8)
+2022-08-10 10:49:36,454 INFO: Microblog startup [in C:\Learning\SEL\Wk\Code\CMU-SOEN-Microblog-Assignment-Repo\app\__init__.py:89]
+2022-08-10 10:49:39,041 INFO: Microblog startup [in C:\Learning\SEL\Wk\Code\CMU-SOEN-Microblog-Assignment-Repo\app\__init__.py:89]
+2022-08-10 10:49:53,319 INFO: Microblog startup [in C:\Learning\SEL\Wk\Code\CMU-SOEN-Microblog-Assignment-Repo\app\__init__.py:89]
