@@ -2,7 +2,9 @@ import base64
 from datetime import datetime, timedelta
 from hashlib import md5
 import json
+from logging import exception
 import os
+# from re import S
 from time import time
 from flask import current_app, url_for
 from flask_login import UserMixin
@@ -157,8 +159,8 @@ class User(UserMixin, PaginatedAPIMixin, db.Model):
         try:
             id = jwt.decode(token, current_app.config['SECRET_KEY'],
                             algorithms=['HS256'])['reset_password']
-        except:
-            return
+        except exception as ex:
+            return ex
         return User.query.get(id)
 
     def new_messages(self):
